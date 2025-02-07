@@ -1,0 +1,55 @@
+@use '../util' as u;
+@import '../global/typography';
+@import '../global/colors';
+
+
+.footer {
+    background-color: var(--clr-darker-gray);
+    color: white;
+    min-height: 300px;
+
+
+    &__connect {
+        padding-top: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+        h4 {
+            font-size: var(--fs-2);
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: var(--fs--1);
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        width: 40%;
+        margin: 4rem auto;
+
+
+        img {
+            max-width: 2.1rem;
+            min-width: 2rem;
+            width: 15%;
+        }
+    }
+
+    &__copyright {
+        p {
+            font-size: var(--fs--1);
+            text-align: center;
+        }
+    }
+
+}

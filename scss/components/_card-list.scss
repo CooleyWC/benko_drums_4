@@ -1,0 +1,58 @@
+@use '../util' as u;
+@import '../global/typography';
+@import '../global/colors';
+
+
+.card-list {
+    padding: 2rem 0;
+    background-color: var(--clr-dark-gray);
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    gap: 1em;
+
+    @include u.breakpoint(medium) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto
+    }
+    
+}
+
+.card {
+    padding: 4rem 2rem;
+    background-color: var(--clr-med-gray);
+    color: white;
+    width: 100%;
+    
+  
+
+    h3 {
+        font-size: var(--fs-1);
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: var(--fs--1);
+        margin: 0 auto;
+        padding-top: 1em;
+        width: 70%;
+        text-align: center;
+    }
+
+    @include u.breakpoint(medium) {
+        min-height: 320px;
+        
+        p {
+            width: 90%;
+        }
+    }
+
+    @include u.breakpoint(large) {
+        min-height: 400px;
+    }
+
+   
+    
+}

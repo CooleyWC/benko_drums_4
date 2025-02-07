@@ -1,0 +1,45 @@
+@use '../util' as u;
+
+@import '../global/typography';
+@import '../global/colors';
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 4em 0;
+
+    h2 {
+        color: var(--clr-dark-gray);
+        font-size: var(--fs-2);
+        font-weight: 600;
+        padding-bottom: 2em;
+    }
+
+    p {
+        font-size: var(--fs-0);
+        padding: 0 4em;
+        line-height: 1.5em;
+
+
+        @include u.breakpoint(medium){
+            width: 80%;
+            text-align: left;
+            margin: 0 auto;
+        }
+
+        @include u.breakpoint(large){
+            width: 60%;
+        }
+    }
+
+
+
+
+
+
+
+
+}

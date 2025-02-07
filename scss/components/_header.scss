@@ -1,0 +1,162 @@
+@use '../util' as u;
+@import '../global/colors';
+@import '../global/typography';
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1.5rem;
+    background-color: var(--clr-darker-gray);
+
+    button {
+        background: none;
+        border: none;
+        padding: 0;
+
+        @media (width >=40em){
+            display: none;
+        }
+    }
+
+    .nav-logo {
+        padding-left: 0.7em;
+        color: white;
+        font-weight: 600;
+
+        a {
+            text-decoration: none;
+        }
+
+        &:hover {
+            animation: pulse 3s infinite ease-in-out
+        }
+
+    }
+
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            color: white;
+        }
+        50% {
+            transform: scale(1.1);
+            color: gray;
+        }
+        100% {
+            transform: scale(1);
+            color: white;
+        }
+    }
+
+    #btnOpen {
+
+        padding: 0.5em;
+        margin-right: 2rem;
+        cursor: pointer;
+
+        border-radius: 5px;
+
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+            background-color: var(--clr-dark-red);
+        }
+    }
+
+    #btnClose {
+
+        padding: 0.5em;
+        margin-right: 2rem;
+        cursor: pointer;
+
+        border-radius: 5px;
+
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+            background-color: var(--clr-dark-red);
+        }
+    }
+
+    ul {
+        margin-right: 0.5rem;
+    }
+
+
+    &__link {
+        color: white;
+        font-size: var(--fs-0);
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+        padding: 0.3em 1em;
+        border-radius: 5px;
+
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+            background-color: var(--clr-dark-red);
+        }
+
+        @media (max-width:50em){
+            padding: 0.5em 0.5em;
+        }
+    }
+
+    
+    &__open[aria-expanded='true'] {
+        + .topnav__menu {
+            translate: 0;
+
+            @media (prefers-reduced-motion) {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__close {
+        display: block;
+        margin-inline-start: auto;
+        margin-block-end: 8rem;
+
+        img {
+            width: 2.5rem;
+        }
+    }
+
+    &__menu {
+        @media (width < 40em) {
+            position: fixed;
+            inset: 0;
+            padding: 1.5rem;
+            background-color: var(--clr-darker-gray);
+            translate: 100vw 0;
+            transition: translate 0.5s ease-in-out;
+            color: white;
+        }
+
+        @media (width < 40em) and (prefers-reduced-motion) {
+            translate: 0;
+            opacity: 0;
+            transition: opacity 500ms ease-in-out;
+        }
+    }
+
+    &__links {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+
+        @media (width <40em){
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        list-style-type: none;
+    }
+}
