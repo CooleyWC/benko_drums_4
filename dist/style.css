@@ -508,7 +508,7 @@ textarea:not([rows]) {
 }
 .title__bio {
   position: relative;
-  background-image: url("/img/chi-3-background.webp");
+  background-image: url("img/chi-3-background.webp");
   -o-object-fit: cover;
      object-fit: cover;
   background-repeat: no-repeat;
