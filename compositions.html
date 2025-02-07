@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+  <title>Compositions | Tom Benko</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/dist/style.css">
+
+  
+  
+  <script src="https://cdn.jsdelivr.net/gh/rick-liruixin/body-scroll-lock-upgrade@v1.1.0/lib/index.umd.js"></script>
+  <script src="script.js" async></script>
+
+</head>
+<body class="about-body">
+    <header class="topnav wrapper">
+        <h1 class="nav-logo"><a href="/">Tom Benko</a></h1>
+        <nav>
+            <span id="nav-label" hidden>Navigation</span>
+            <button 
+                id="btnOpen"
+                class="topnav__open" 
+                aria-expanded="false" 
+                aria-labelledby="nav-label">
+                <img src="img/menu.svg" alt="" width="30" height="30"/>
+            </button>
+            <div class="topnav__menu" role="dialog" aria-labelledby="nav-label">
+                <button class="topnav__close" id="btnClose" aria-label="Close">
+                    <img src="img/x.svg" alt="" width="30" height="30"/>
+                </button>
+                <ul class="topnav__links">
+                    <li class="topnav__item"><a href="/about.html" class="topnav__link">About</a></li>
+                    <li class="topnav__item"><a href="/compositions.html" class="topnav__link">Compositions</a></li>
+                    <li class="topnav__item"><a href="/contact.html" class="topnav__link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="compositions__wrapper">
+            <h1>Compositions</h1>
+        </section>
+        <section class="compositions__comp-list">
+            <article class="compositions__comp-item">
+                <h2>Things of Three</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nobis amet a? Amet, dignissimos obcaecati!</p>
+                <img src="/img/3rocks.avif" alt="sign with number 3"/> 
+            </article>
+            <article class="compositions__comp-item">
+                <h2>Mug Shot</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus voluptatibus nobis tempora veritatis repudiandae numquam.</p>
+
+                <img src="/img/mug.avif" alt="mug"/> 
+            </article>
+        </section>
+    </main>
+
+</body>
+</body>
+</html>

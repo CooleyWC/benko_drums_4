@@ -1,0 +1,67 @@
+@use '../util' as u;
+@import '../global/typography';
+@import '../global/colors';
+
+
+.compositions__wrapper {
+
+    background-color: var(--clr-dark-gray);
+    // min-height: 1400px;
+
+    h1 {
+        padding: 4rem 0;
+        color: white;
+        font-size: var(--fs-3);
+        letter-spacing: 0.2em;
+        font-weight: 600;
+        text-align: center;
+
+        @include u.breakpoint(medium) {
+            font-size: var(--fs-5);
+        }
+    }
+
+}
+
+.compositions__comp-list {
+
+    padding: 2em 1em;
+    background-color: var(--clr-dark-gray);
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    
+
+    @include u.breakpoint(large) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto
+    }
+    
+
+}
+
+.compositions__comp-item {
+
+    padding: 4rem 2rem;
+    background-color: var(--clr-med-gray);
+    color: white;
+    width: 100%;
+
+    h2 {
+        font-size: var(--fs-2);
+        font-weight: 600;
+        margin-bottom: 2em;
+    }
+
+    p {
+        font-size: var(--fs-0);
+        margin-bottom: 2em;
+    }
+
+    img {
+        max-height: 300px;
+        
+    }
+    
+}
