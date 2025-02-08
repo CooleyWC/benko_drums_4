@@ -28,6 +28,11 @@
             text-decoration: none;
         }
 
+        img {
+            width: 120px;
+            height: 120px;
+        }
+
         &:hover {
             animation: pulse 3s infinite ease-in-out
         }

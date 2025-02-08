@@ -5,6 +5,7 @@
 
 
 .about {
+    background-color: var(--clr-lighter-gray);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,7 +16,7 @@
         color: var(--clr-dark-gray);
         font-size: var(--fs-2);
         font-weight: 600;
-        padding-bottom: 2em;
+        
     }
 
     p {
@@ -31,15 +32,15 @@
         }
 
         @include u.breakpoint(large){
-            width: 60%;
+            width: 70%;
         }
     }
 
+}
 
-
-
-
-
-
-
+.about-underline {
+    margin: 1em auto;
+    width: 20%;
+    height: 0.3em;
+    background-color: var(--clr-dark-red);
 }
