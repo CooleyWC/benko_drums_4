@@ -34,7 +34,14 @@
 
     @include u.breakpoint(large) {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto
+        grid-template-rows: auto;
+        padding: 2em 4em;
+        gap: 2em;
+    }
+
+    @include u.breakpoint(xlarge) {
+        padding: 2em 8em;
+        gap: 3em;
     }
     
 
@@ -61,6 +68,24 @@
     img {
         max-height: 300px;
         
+    }
+
+    @include u.breakpoint(medium) {
+        p {
+            width: 80%;
+        }
+    }
+
+    @include u.breakpoint(large) {
+        p {
+            width: 70%;
+        }
+    }
+
+    @include u.breakpoint(xlarge) {
+        p {
+            width: 50%;
+        }
     }
     
 }

@@ -10,9 +10,3 @@ $breakpoints-up: (
         @content;
     }
 }
-
-// @mixin breakpoint-down($size){
-//     @media (width < map.get($breakpoints, $size)){
-//         @content;
-//     }
-// }

@@ -634,6 +634,14 @@ textarea:not([rows]) {
   .compositions__comp-list {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
+    padding: 2em 4em;
+    gap: 2em;
+  }
+}
+@media (min-width: 90em) {
+  .compositions__comp-list {
+    padding: 2em 8em;
+    gap: 3em;
   }
 }
 
@@ -654,4 +662,19 @@ textarea:not([rows]) {
 }
 .compositions__comp-item img {
   max-height: 300px;
+}
+@media (min-width: 43.75em) {
+  .compositions__comp-item p {
+    width: 80%;
+  }
+}
+@media (min-width: 56.25em) {
+  .compositions__comp-item p {
+    width: 70%;
+  }
+}
+@media (min-width: 90em) {
+  .compositions__comp-item p {
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */
