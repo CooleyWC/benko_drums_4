@@ -24,21 +24,21 @@
         text-align: center;
     }
 
-    &__bio {
-        position: relative;
-        background-image: url("https://cooleywc.github.io/benko_drums_4/img/chi-3-background.webp");
-        object-fit: cover;
-        background-repeat: no-repeat;
-        min-height: 1400px;
-        background-position: top;
-        inset: 0;
+    // &__bio {
+    //     position: relative;
+    //     background-image: url("https://cooleywc.github.io/benko_drums_4/img/chi-3-background.webp");
+    //     object-fit: cover;
+    //     background-repeat: no-repeat;
+    //     min-height: 1400px;
+    //     background-position: top;
+    //     inset: 0;
     
-        background-color: var(--clr-dark-gray);
+    //     background-color: var(--clr-dark-gray);
     
-        @include u.breakpoint(medium){
-            background-size: cover;
-        }
-    }
+    //     @include u.breakpoint(medium){
+    //         background-size: cover;
+    //     }
+    // }
 
     &__card-wrapper {
         position: absolute;
@@ -111,7 +111,21 @@
 }
 
 
+.title__bio {
+    position: relative;
+    background-image: url("/img/chi-3-background.webp");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    min-height: 1400px;
+    background-position: top;
+    inset: 0;
 
+    background-color: var(--clr-dark-gray);
+
+    @include u.breakpoint(medium){
+        background-size: cover;
+    }
+}
 
 
 
