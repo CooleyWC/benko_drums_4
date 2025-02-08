@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   
-  <title>Compositions | Tom Benko</title>
+  <title>Contact | Tom Benko</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,12 +43,20 @@
         </nav>
     </header>
     <main>
-        <section class="form-container">
+        <section class="form__container">
             <div>
                 <h1>Contact Tom</h1>
             </div>
-            <form>
-
+            <form class="form__wrapper">
+                <div class="form__email">
+                    <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email Address"/>
+                </div>
+                <div class="form__message">
+                    <label for="message" >Message</label>
+                    <textarea name="message" id="message" placeholder="Enter Your Message"></textarea>
+                </div>
+                <button type="submit" class="form__submit">Submit Your Message</button>
             </form>
         </section>
     </main>

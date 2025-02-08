@@ -1,0 +1,77 @@
+@use '../util' as u;
+@import '../global/typography';
+@import '../global/colors';
+
+
+.form__container {
+    background-color: var(--clr-dark-gray);
+    height: 100vh;
+    
+
+    h1 {
+        padding: 4rem 0;
+        color: white;
+        font-size: var(--fs-3);
+        letter-spacing: 0.2em;
+        font-weight: 600;
+        text-align: center;
+
+        @include u.breakpoint(medium) {
+            font-size: var(--fs-5);
+        }
+    }
+
+    form {
+        margin: 0 2em;
+   
+        label {
+            display: inline-block;
+            color: white;
+            font-size: var(--fs-1); 
+        }
+
+        #email {
+            background-color: var(--clr-light-gray);
+            width: 100%;
+            padding: 1em 2em;
+            margin: 2em 0;
+        }
+
+        #message {
+            background-color: var(--clr-light-gray);
+            width: 100%;
+            padding: 1em 2em;
+            margin: 2em 0;
+        }
+
+        button {
+            background-color: var(--clr-dark-red);
+            font-size: var(--fs-2);
+            font-weight: 700;
+            padding: 1em 2em;
+            width: 50%;
+            border: none;
+            color: white;
+            margin: 0 auto;
+            display: block;
+            
+
+            &:hover {
+                background-color: var(--clr-darker-gray);
+                cursor: pointer;
+                transition: background-color 0.3s ease-in-out;
+                color: white;
+                border: solid 5px var(--clr-dark-red);
+            }
+        }
+
+        @include u.breakpoint(medium) {
+            margin: 0 8em;
+        }
+            
+    }
+}
+
+::placeholder {
+    color: black;
+}
