@@ -5,7 +5,7 @@
 
 .card-list {
     padding: 2rem 0;
-    background-color: var(--clr-dark-gray);
+    background-color: var(--clr-med-gray);
     display: grid;
     place-items: center;
     grid-template-columns: 1fr;
@@ -20,31 +20,25 @@
 
 .card {
     padding: 4rem 2rem;
-    background-color: var(--clr-med-gray);
-    color: white;
+    background-color: var(--clr-dark-gray);
+    // background-color: var(--clr-med-gray);
+    color: var(--clr-light-gray);
     width: 100%;
     text-align: center;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // flex-direction: column;
-    // position: relative;
+ 
 
     .fa-solid {
-        border: 3px solid ;
+        border: 3px solid var(--clr-light-gray);
         border-radius: 50%;
-        color: var(--clr-red);
+        color: var(--clr-med-red);
         font-size: var(--fs-3);
         margin: 1rem auto;
-        padding: 0.5em;
+        padding: 0.3em;
     }
     
-  
-
     h3 {
         font-size: var(--fs-1);
         font-weight: 600;
-        // text-align: center;
         margin-bottom: 1rem;
     }
 

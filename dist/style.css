@@ -4,8 +4,9 @@
   --clr-med-gray: hsl(191, 18%, 22%);
   --clr-lighter-gray: hsl(201, 17%, 80%);
   --clr-light-gray: hsl(201, 17%, 77%);
+  --clr-darker-red: hsl(351, 100%, 17%);
   --clr-dark-red: hsl(351, 100%, 24%);
-  --clr-med-red: hsl(351, 100%, 48%);
+  --clr-med-red: hsl(351, 100%, 34%);
   --clr-red: hsl(351, 59%, 47%);
   --clr-submit: hsl(125, 27%, 28%);
 }
@@ -116,8 +117,9 @@ textarea:not([rows]) {
   --clr-med-gray: hsl(191, 18%, 22%);
   --clr-lighter-gray: hsl(201, 17%, 80%);
   --clr-light-gray: hsl(201, 17%, 77%);
+  --clr-darker-red: hsl(351, 100%, 17%);
   --clr-dark-red: hsl(351, 100%, 24%);
-  --clr-med-red: hsl(351, 100%, 48%);
+  --clr-med-red: hsl(351, 100%, 34%);
   --clr-red: hsl(351, 59%, 47%);
   --clr-submit: hsl(125, 27%, 28%);
 }
@@ -148,13 +150,15 @@ textarea:not([rows]) {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  width: 40%;
+  width: 30%;
   margin: 4rem auto;
 }
-.footer__socials img {
-  max-width: 2.1rem;
-  min-width: 2rem;
-  width: 15%;
+.footer__socials .fa-brands {
+  font-size: var(--fs-3);
+}
+.footer__socials .fa-brands:hover {
+  cursor: pointer;
+  color: var(--clr-dark-red);
 }
 .footer__copyright p {
   font-size: var(--fs--1);
@@ -167,8 +171,9 @@ textarea:not([rows]) {
   --clr-med-gray: hsl(191, 18%, 22%);
   --clr-lighter-gray: hsl(201, 17%, 80%);
   --clr-light-gray: hsl(201, 17%, 77%);
+  --clr-darker-red: hsl(351, 100%, 17%);
   --clr-dark-red: hsl(351, 100%, 24%);
-  --clr-med-red: hsl(351, 100%, 48%);
+  --clr-med-red: hsl(351, 100%, 34%);
   --clr-red: hsl(351, 59%, 47%);
   --clr-submit: hsl(125, 27%, 28%);
 }
@@ -377,8 +382,9 @@ textarea:not([rows]) {
   --clr-med-gray: hsl(191, 18%, 22%);
   --clr-lighter-gray: hsl(201, 17%, 80%);
   --clr-light-gray: hsl(201, 17%, 77%);
+  --clr-darker-red: hsl(351, 100%, 17%);
   --clr-dark-red: hsl(351, 100%, 24%);
-  --clr-med-red: hsl(351, 100%, 48%);
+  --clr-med-red: hsl(351, 100%, 34%);
   --clr-red: hsl(351, 59%, 47%);
   --clr-submit: hsl(125, 27%, 28%);
 }
@@ -438,15 +444,16 @@ textarea:not([rows]) {
   --clr-med-gray: hsl(191, 18%, 22%);
   --clr-lighter-gray: hsl(201, 17%, 80%);
   --clr-light-gray: hsl(201, 17%, 77%);
+  --clr-darker-red: hsl(351, 100%, 17%);
   --clr-dark-red: hsl(351, 100%, 24%);
-  --clr-med-red: hsl(351, 100%, 48%);
+  --clr-med-red: hsl(351, 100%, 34%);
   --clr-red: hsl(351, 59%, 47%);
   --clr-submit: hsl(125, 27%, 28%);
 }
 
 .card-list {
   padding: 2rem 0;
-  background-color: var(--clr-dark-gray);
+  background-color: var(--clr-med-gray);
   display: grid;
   place-items: center;
   grid-template-columns: 1fr;
@@ -461,18 +468,18 @@ textarea:not([rows]) {
 
 .card {
   padding: 4rem 2rem;
-  background-color: var(--clr-med-gray);
-  color: white;
+  background-color: var(--clr-dark-gray);
+  color: var(--clr-light-gray);
   width: 100%;
   text-align: center;
 }
 .card .fa-solid {
-  border: 3px solid;
+  border: 3px solid var(--clr-light-gray);
   border-radius: 50%;
-  color: var(--clr-red);
+  color: var(--clr-med-red);
   font-size: var(--fs-3);
   margin: 1rem auto;
-  padding: 0.5em;
+  padding: 0.3em;
 }
 .card h3 {
   font-size: var(--fs-1);
@@ -517,8 +524,9 @@ textarea:not([rows]) {
   --clr-med-gray: hsl(191, 18%, 22%);
   --clr-lighter-gray: hsl(201, 17%, 80%);
   --clr-light-gray: hsl(201, 17%, 77%);
+  --clr-darker-red: hsl(351, 100%, 17%);
   --clr-dark-red: hsl(351, 100%, 24%);
-  --clr-med-red: hsl(351, 100%, 48%);
+  --clr-med-red: hsl(351, 100%, 34%);
   --clr-red: hsl(351, 59%, 47%);
   --clr-submit: hsl(125, 27%, 28%);
 }
@@ -639,8 +647,9 @@ textarea:not([rows]) {
   --clr-med-gray: hsl(191, 18%, 22%);
   --clr-lighter-gray: hsl(201, 17%, 80%);
   --clr-light-gray: hsl(201, 17%, 77%);
+  --clr-darker-red: hsl(351, 100%, 17%);
   --clr-dark-red: hsl(351, 100%, 24%);
-  --clr-med-red: hsl(351, 100%, 48%);
+  --clr-med-red: hsl(351, 100%, 34%);
   --clr-red: hsl(351, 59%, 47%);
   --clr-submit: hsl(125, 27%, 28%);
 }
@@ -736,8 +745,9 @@ textarea:not([rows]) {
   --clr-med-gray: hsl(191, 18%, 22%);
   --clr-lighter-gray: hsl(201, 17%, 80%);
   --clr-light-gray: hsl(201, 17%, 77%);
+  --clr-darker-red: hsl(351, 100%, 17%);
   --clr-dark-red: hsl(351, 100%, 24%);
-  --clr-med-red: hsl(351, 100%, 48%);
+  --clr-med-red: hsl(351, 100%, 34%);
   --clr-red: hsl(351, 59%, 47%);
   --clr-submit: hsl(125, 27%, 28%);
 }
