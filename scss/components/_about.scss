@@ -77,14 +77,19 @@
 
 
             p {
-                font-size: var(--fs-0);
+                font-size: var(--fs--1);
                 text-align: center;
+                margin-bottom: 1em;
 
                 @include u.breakpoint(medium){
                     text-align: left;
                 }
 
-                &:first-letter {
+                @include u.breakpoint(xlarge){
+                    font-size: var(--fs-0);
+                }
+
+                 &:first-of-type::first-letter {
                     font-size: var(--fs-2);
                     font-weight: bold;
                     color: var(--clr-red)
@@ -112,4 +117,23 @@
 }
 
 
+.about-footer {
+    background-color: var(--clr-dark-gray);
+    height:650px;
 
+    @include u.breakpoint(small){
+        height: 430px;
+    }
+
+    @include u.breakpoint(medium){
+        height: 720px;
+    }
+
+    @include u.breakpoint(large){
+        height: 550px;
+    }
+
+    @include u.breakpoint(xlarge){
+        height: 590px;
+    }
+}
