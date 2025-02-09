@@ -126,7 +126,7 @@ textarea:not([rows]) {
 
 .footer {
   background-color: var(--clr-darker-gray);
-  color: white;
+  color: var(--clr-light-gray);
   min-height: 300px;
 }
 .footer__connect {
@@ -142,16 +142,17 @@ textarea:not([rows]) {
   letter-spacing: 0.02em;
   margin-bottom: 1rem;
 }
-.footer__connect p {
-  font-size: var(--fs--1);
+.footer__connect a {
+  font-size: var(--fs-0);
   letter-spacing: 0.2em;
+  text-underline-offset: 0.5em;
 }
 .footer__socials {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  width: 30%;
+  width: 90%;
   margin: 4rem auto;
 }
 .footer__socials .fa-brands {
@@ -160,6 +161,12 @@ textarea:not([rows]) {
 .footer__socials .fa-brands:hover {
   cursor: pointer;
   color: var(--clr-dark-red);
+  transition: color 0.3s ease-in-out;
+}
+@media (min-width: 56.25em) {
+  .footer__socials {
+    width: 32%;
+  }
 }
 .footer__copyright p {
   font-size: var(--fs--1);
@@ -402,7 +409,7 @@ textarea:not([rows]) {
 }
 .about p {
   font-size: var(--fs-0);
-  padding: 0 4em;
+  padding: 0 2em;
   line-height: 1.5em;
 }
 @media (min-width: 43.75em) {
@@ -410,6 +417,7 @@ textarea:not([rows]) {
     width: 80%;
     text-align: left;
     margin: 0 auto;
+    padding: 0 4em;
   }
 }
 @media (min-width: 56.25em) {

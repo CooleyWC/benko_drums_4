@@ -5,7 +5,7 @@
 
 .footer {
     background-color: var(--clr-darker-gray);
-    color: white;
+    color: var(--clr-light-gray);
     min-height: 300px;
 
 
@@ -24,9 +24,10 @@
             margin-bottom: 1rem;
         }
 
-        p {
-            font-size: var(--fs--1);
+        a {
+            font-size: var(--fs-0);
             letter-spacing: 0.2em;
+            text-underline-offset: 0.5em;
         }
     }
 
@@ -35,17 +36,23 @@
         justify-content: space-around;
         align-items: center;
         flex-direction: row;
-        width: 30%;
+        width: 90%;
         margin: 4rem auto;
+        
 
         .fa-brands {
+            // color: var(--clr-light-gray);
             font-size: var(--fs-3);
             
-
             &:hover {
                 cursor: pointer;
-                color: var(--clr-dark-red)
+                color: var(--clr-dark-red);
+                transition: color 0.3s ease-in-out;
             }
+        }
+
+        @include u.breakpoint(large){
+            width: 32%;
         }
     }
 
