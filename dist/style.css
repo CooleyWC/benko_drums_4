@@ -144,6 +144,7 @@ textarea:not([rows]) {
 }
 .footer__connect p {
   font-size: var(--fs--1);
+  letter-spacing: 0.2em;
 }
 .footer__socials {
   display: flex;
@@ -207,7 +208,7 @@ textarea:not([rows]) {
   }
 }
 .topnav .nav-logo {
-  padding-left: 0.7em;
+  padding-left: 1em;
   color: white;
   font-weight: 600;
 }
@@ -224,15 +225,12 @@ textarea:not([rows]) {
 @keyframes pulse {
   0% {
     transform: scale(1);
-    color: white;
   }
   50% {
     transform: scale(1.1);
-    color: gray;
   }
   100% {
     transform: scale(1);
-    color: white;
   }
 }
 .topnav #btnOpen {

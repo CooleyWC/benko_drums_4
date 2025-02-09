@@ -20,7 +20,7 @@
     }
 
     .nav-logo {
-        padding-left: 0.7em;
+        padding-left: 1em;
         color: white;
         font-weight: 600;
 
@@ -43,15 +43,12 @@
     @keyframes pulse {
         0% {
             transform: scale(1);
-            color: white;
         }
         50% {
             transform: scale(1.1);
-            color: gray;
         }
         100% {
             transform: scale(1);
-            color: white;
         }
     }
 
