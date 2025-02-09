@@ -49,11 +49,23 @@
             font-size: var(--fs-1);
             font-weight: 700;
             padding: 0.8em 1em;
-            width: 50%;
+            width: 70%;
             border: none;
             color: white;
             margin: 0 auto;
             display: block;
+
+            @include u.breakpoint(medium) {
+                width: 60%;
+            }
+
+            @include u.breakpoint(large) {
+                width: 50%;
+            }
+
+            @include u.breakpoint(xlarge) {
+                width: 30%;
+            }
             
 
             &:hover {

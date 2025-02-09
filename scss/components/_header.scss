@@ -129,6 +129,7 @@
     }
 
     &__menu {
+        
         @media (width < 40em) {
             position: fixed;
             inset: 0;

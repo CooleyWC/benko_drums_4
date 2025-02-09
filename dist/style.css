@@ -831,11 +831,26 @@ textarea:not([rows]) {
   font-size: var(--fs-1);
   font-weight: 700;
   padding: 0.8em 1em;
-  width: 50%;
+  width: 70%;
   border: none;
   color: white;
   margin: 0 auto;
   display: block;
+}
+@media (min-width: 43.75em) {
+  .form__container form button {
+    width: 60%;
+  }
+}
+@media (min-width: 56.25em) {
+  .form__container form button {
+    width: 50%;
+  }
+}
+@media (min-width: 90em) {
+  .form__container form button {
+    width: 30%;
+  }
 }
 .form__container form button:hover {
   background-color: var(--clr-darker-gray);
