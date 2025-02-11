@@ -114,17 +114,17 @@
 
         &:hover {
             cursor: pointer;
-            background-image: url('/img/menu-hover.svg');
+            background-image: url('img/menu-hover.svg');
             background-repeat: no-repeat;
         }
     }
 
     .mobile-nav-toggle[aria-expanded='true'] {
-        background-image: url('/img/x.svg');
+        background-image: url('img/x.svg');
         
         &:hover {
             cursor: pointer;
-            background-image: url('/img/x-hover.svg');
+            background-image: url('img/x-hover.svg');
             background-repeat: no-repeat;
         }
     }
