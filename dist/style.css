@@ -478,7 +478,7 @@ textarea:not([rows]) {
   color: var(--clr-med-red);
   font-size: var(--fs-3);
   margin: 1rem auto;
-  padding: 0.3em;
+  padding: 0.4em;
 }
 .card h3 {
   font-size: var(--fs-1);
@@ -489,12 +489,18 @@ textarea:not([rows]) {
   font-size: var(--fs--1);
   margin: 0 auto;
   padding-top: 1em;
+  padding-bottom: 3em;
   width: 70%;
   text-align: center;
 }
+.card a {
+  font-weight: 700;
+  text-underline-offset: 8px;
+  text-decoration-color: var(--clr-med-red);
+}
 @media (min-width: 43.75em) {
   .card {
-    min-height: 320px;
+    min-height: 550px;
   }
   .card p {
     width: 90%;
@@ -502,7 +508,14 @@ textarea:not([rows]) {
 }
 @media (min-width: 56.25em) {
   .card {
-    min-height: 400px;
+    min-height: 600px;
+  }
+  .card p {
+    font-size: var(--fs-0);
+    width: 70%;
+  }
+  .card a {
+    font-size: var(--fs-0);
   }
 }
 

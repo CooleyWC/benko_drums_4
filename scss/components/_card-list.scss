@@ -21,7 +21,6 @@
 .card {
     padding: 4rem 2rem;
     background-color: var(--clr-dark-gray);
-    // background-color: var(--clr-med-gray);
     color: var(--clr-light-gray);
     width: 100%;
     text-align: center;
@@ -33,7 +32,7 @@
         color: var(--clr-med-red);
         font-size: var(--fs-3);
         margin: 1rem auto;
-        padding: 0.3em;
+        padding: 0.4em;
     }
     
     h3 {
@@ -46,20 +45,37 @@
         font-size: var(--fs--1);
         margin: 0 auto;
         padding-top: 1em;
+        padding-bottom: 3em;
         width: 70%;
         text-align: center;
     }
 
+    a { 
+        font-weight: 700;
+        text-underline-offset: 8px;
+        text-decoration-color: var(--clr-med-red);
+    }
+
     @include u.breakpoint(medium) {
-        min-height: 320px;
+        min-height: 550px;
         
         p {
+            
             width: 90%;
         }
     }
 
     @include u.breakpoint(large) {
-        min-height: 400px;
+        min-height: 600px;
+
+        p {
+            font-size: var(--fs-0);
+            width: 70%;
+        }
+
+        a {
+            font-size: var(--fs-0);
+        }
     }
 
    
