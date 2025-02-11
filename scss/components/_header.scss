@@ -104,29 +104,37 @@
         position: absolute;
         z-index: 9999;
         background-color: transparent;
-        background: url('/img/menu.svg');
-        background-repeat: no-repeat;
         width: 2rem;
         aspect-ratio: 1;
         top: 2.5rem;
         right: 2rem;
         border: 0;
+    }
+
+    .fa-solid {
+        font-size: var(--fs-2);
+        color: white;
 
         &:hover {
             cursor: pointer;
-            background-image: url('img/menu-hover.svg');
-            background-repeat: no-repeat;
+            color: var(--clr-red);
         }
     }
 
-    .mobile-nav-toggle[aria-expanded='true'] {
-        background-image: url('img/x.svg');
-        
-        &:hover {
-            cursor: pointer;
-            background-image: url('img/x-hover.svg');
-            background-repeat: no-repeat;
-        }
+    .mobile-nav-toggle i {
+        display: none;
+    }
+
+    .mobile-nav-toggle .fa-bars {
+        display: inline-block;
+    }
+
+    .mobile-nav-toggle[aria-expanded='true'] .fa-bars {
+        display: none;
+    }
+
+    .mobile-nav-toggle[aria-expanded='true'] .fa-x {
+        display: inline-block;
     }
 }
 
