@@ -1,0 +1,48 @@
+@use '../util' as u;
+
+@import '../global/typography';
+@import '../global/colors';
+
+
+.thank-you-container {
+
+    background-color: var(--clr-dark-gray);
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    flex-direction: column;
+    height: 100vh;
+
+    &__card {
+    
+        text-align: center;
+        padding-top: 8em;
+
+        h1 {
+            font-size: var(--fs-3);
+            padding-bottom: 1em;
+        }
+
+        p {
+            font-size: var(--fs-1);
+            padding-bottom: 1em;
+        }
+
+        a {
+            font-size: var(--fs-0);
+            font-weight: 700;
+            text-underline-offset: 0.5em;
+            transition: background-color 0.3s ease-in-out;
+            padding:1em 2em;
+            border-radius: 8px;
+
+            &:hover {
+                background-color: var(--clr-dark-red);
+
+            }
+        }
+    }
+
+}
