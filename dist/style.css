@@ -147,6 +147,10 @@ textarea:not([rows]) {
   font-size: var(--fs-0);
   letter-spacing: 0.2em;
   text-underline-offset: 0.5em;
+  transition: all 1s;
+}
+.footer__connect a:hover {
+  transform: scale(1.05);
 }
 .footer__socials {
   display: flex;
@@ -172,6 +176,7 @@ textarea:not([rows]) {
 .footer__copyright p {
   font-size: var(--fs--1);
   text-align: center;
+  padding-bottom: 0.5em;
 }
 
 :root {
@@ -418,6 +423,31 @@ textarea:not([rows]) {
     width: 70%;
   }
 }
+.about a {
+  margin: 1.5em auto;
+  width: 50%;
+  background-color: var(--clr-dark-red);
+  padding: 1em;
+  font-size: var(--fs-0);
+  font-weight: 600;
+  text-underline-offset: 8px;
+  color: var(--clr-lighter-gray);
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+.about a:hover {
+  background-color: var(--clr-dark-gray);
+}
+@media (min-width: 43.75em) {
+  .about a {
+    width: 40%;
+  }
+}
+@media (min-width: 56.25em) {
+  .about a {
+    width: 25%;
+  }
+}
 
 .about-underline {
   margin: 1em auto;
@@ -494,9 +524,14 @@ textarea:not([rows]) {
   text-align: center;
 }
 .card a {
+  display: inline-block;
   font-weight: 700;
   text-underline-offset: 8px;
   text-decoration-color: var(--clr-med-red);
+  transition: all 1s;
+}
+.card a:hover {
+  transform: scale(1.05);
 }
 @media (min-width: 43.75em) {
   .card {
@@ -833,7 +868,7 @@ textarea:not([rows]) {
   margin: 2em 0;
 }
 .form__container form button {
-  background-color: var(--clr-dark-red);
+  background-color: var(--clr-darker-gray);
   font-size: var(--fs-1);
   font-weight: 700;
   padding: 0.8em 1em;
@@ -859,11 +894,10 @@ textarea:not([rows]) {
   }
 }
 .form__container form button:hover {
-  background-color: var(--clr-darker-gray);
+  background-color: var(--clr-dark-red);
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   color: white;
-  border: solid 5px var(--clr-dark-red);
 }
 @media (min-width: 43.75em) {
   .form__container form {

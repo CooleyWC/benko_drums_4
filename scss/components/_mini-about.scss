@@ -1,5 +1,4 @@
 @use '../util' as u;
-
 @import '../global/typography';
 @import '../global/colors';
 
@@ -16,7 +15,6 @@
         color: var(--clr-dark-gray);
         font-size: var(--fs-2);
         font-weight: 600;
-        
     }
 
     p {
@@ -34,6 +32,31 @@
 
         @include u.breakpoint(large){
             width: 70%;
+        }
+    }
+
+    a { 
+        margin: 1.5em auto;
+        width: 50%;
+        background-color: var(--clr-dark-red);
+        padding: 1em;
+        font-size: var(--fs-0);
+        font-weight: 600;
+        text-underline-offset: 8px;
+        color: var(--clr-lighter-gray);
+        border-radius: 8px;
+        transition: background-color 0.3s ease-in-out;
+        
+        &:hover {
+            background-color: var(--clr-dark-gray);
+        }
+
+        @include u.breakpoint(medium){
+            width: 40%;
+        }
+
+        @include u.breakpoint(large){
+            width: 25%;
         }
     }
 

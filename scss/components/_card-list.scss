@@ -51,9 +51,15 @@
     }
 
     a { 
+        display: inline-block;
         font-weight: 700;
         text-underline-offset: 8px;
         text-decoration-color: var(--clr-med-red);
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     @include u.breakpoint(medium) {

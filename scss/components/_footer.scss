@@ -28,6 +28,11 @@
             font-size: var(--fs-0);
             letter-spacing: 0.2em;
             text-underline-offset: 0.5em;
+            transition: all 1s;
+
+            &:hover {
+                transform: scale(1.05)
+            }
         }
     }
 
@@ -41,7 +46,6 @@
         
 
         .fa-brands {
-            // color: var(--clr-light-gray);
             font-size: var(--fs-3);
             
             &:hover {
@@ -60,6 +64,7 @@
         p {
             font-size: var(--fs--1);
             text-align: center;
+            padding-bottom: 0.5em;
         }
     }
 
