@@ -425,7 +425,7 @@ textarea:not([rows]) {
 }
 .about a {
   margin: 1.5em auto;
-  width: 50%;
+  width: 52%;
   background-color: var(--clr-dark-red);
   padding: 1em;
   font-size: var(--fs-0);
