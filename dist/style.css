@@ -668,7 +668,9 @@ textarea:not([rows]) {
 
 .title__bio {
   position: relative;
-  background-image: url("https://cooleywc.github.io/benko_drums_4/img/chi-3-background.webp");
+  background-image: url("/img/chicago-500.webp");
+  background-image: -webkit-image-set(url("/img/chicago-500.webp") 1x, url("/img/chicago-1500.webp") 2x);
+  background-image: image-set(url("/img/chicago-500.webp") 1x, url("/img/chicago-1500.webp") 2x);
   -o-object-fit: cover;
      object-fit: cover;
   background-repeat: no-repeat;
