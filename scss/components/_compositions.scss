@@ -1,91 +1,35 @@
 @use '../util' as u;
+
 @import '../global/typography';
 @import '../global/colors';
 
 
-.compositions__wrapper {
+.thank-you-container {
 
     background-color: var(--clr-dark-gray);
-
-    h1 {
-        padding: 4rem 0;
-        color: white;
-        font-size: var(--fs-3);
-        letter-spacing: 0.2em;
-        font-weight: 600;
-        text-align: center;
-
-        @include u.breakpoint(medium) {
-            font-size: var(--fs-5);
-        }
-    }
-
-}
-
-.compositions__comp-list {
-
-    padding: 2em 1em;
-    background-color: var(--clr-dark-gray);
-    display: grid;
-    min-height: 100vh;
-    grid-template-columns: 1fr;
-    gap: 1em;
-    
-
-    @include u.breakpoint(large) {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        padding: 2em 4em;
-        gap: 2em;
-    }
-
-    @include u.breakpoint(xlarge) {
-        padding: 2em 8em;
-        gap: 3em;
-    }
-    
-
-}
-
-.compositions__comp-item {
-
-    padding: 4rem 2rem;
-    background-color: var(--clr-med-gray);
     color: white;
-    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
-    h2 {
-        font-size: var(--fs-2);
-        font-weight: 600;
-        margin-bottom: 2em;
-    }
+    flex-direction: column;
+    height: 100vh;
 
-    p {
-        font-size: var(--fs-0);
-        margin-bottom: 2em;
-    }
-
-    img {
-        max-height: 300px;
-        
-    }
-
-    @include u.breakpoint(medium) {
-        p {
-            width: 80%;
-        }
-    }
-
-    @include u.breakpoint(large) {
-        p {
-            width: 70%;
-        }
-    }
-
-    @include u.breakpoint(xlarge) {
-        p {
-            width: 50%;
-        }
-    }
+    &__card {
     
+        text-align: center;
+        padding-top: 8em;
+
+        h1 {
+            font-size: var(--fs-3);
+            padding-bottom: 1em;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: var(--fs-1);
+            font-weight: 500;
+        }
+    }
+
 }
