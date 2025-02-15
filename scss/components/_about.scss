@@ -30,7 +30,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0,0,0,0.6);
+        background-color: rgba(0,0,0,0.4);
         z-index: 1;
 
         @include u.breakpoint(medium){
@@ -55,13 +55,21 @@
 
 
         h2 {
-            font-size: var(--fs-1);
+            font-size: var(--fs-0);
             font-weight: 500;
             text-align: center;
-            margin: 2em auto;
+            margin: 4em 0;
             background-color: var(--clr-darker-gray);
             width: 40%;
-            padding: 1em;
+            padding: 0.5em;
+
+            @include u.breakpoint(medium){
+                font-size: var(--fs-1);
+                padding: 1em;
+                margin: 4em auto;
+                width: 70%;
+                
+            }
         }
         
 
@@ -102,20 +110,19 @@
 
 .title__bio {
     position: relative;
+    background-color: var(--clr-med-light-gray);
     background-image: url('/img/chicago-500.webp');
     background-image: -webkit-image-set(
-        url("/img/chicago-500.webp") 1x, 
+        url("/img/chicago-500-tall.webp") 1x, 
         url("/img/chicago-1500.webp") 2x);
     background-image: image-set(
-        url('/img/chicago-500.webp') 1x, 
+        url('/img/chicago-500-tall.webp') 1x, 
         url('/img/chicago-1500.webp') 2x);
     object-fit: cover;
     background-repeat: no-repeat;
     min-height: 1400px;
     background-position: top;
     inset: 0;
-
-    background-color: var(--clr-dark-gray);
 
     @include u.breakpoint(medium){
         background-size: cover;

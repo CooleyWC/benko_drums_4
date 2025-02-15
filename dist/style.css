@@ -2,6 +2,7 @@
   --clr-darker-gray: #0f1415;
   --clr-dark-gray: hsl(191, 18%, 13%);
   --clr-med-gray: hsl(191, 18%, 22%);
+  --clr-med-light-gray: hsl(191, 18%, 40%);
   --clr-lighter-gray: hsl(201, 17%, 80%);
   --clr-light-gray: hsl(201, 17%, 77%);
   --clr-darker-red: hsl(351, 100%, 17%);
@@ -116,6 +117,7 @@ textarea:not([rows]) {
   --clr-darker-gray: #0f1415;
   --clr-dark-gray: hsl(191, 18%, 13%);
   --clr-med-gray: hsl(191, 18%, 22%);
+  --clr-med-light-gray: hsl(191, 18%, 40%);
   --clr-lighter-gray: hsl(201, 17%, 80%);
   --clr-light-gray: hsl(201, 17%, 77%);
   --clr-darker-red: hsl(351, 100%, 17%);
@@ -183,6 +185,7 @@ textarea:not([rows]) {
   --clr-darker-gray: #0f1415;
   --clr-dark-gray: hsl(191, 18%, 13%);
   --clr-med-gray: hsl(191, 18%, 22%);
+  --clr-med-light-gray: hsl(191, 18%, 40%);
   --clr-lighter-gray: hsl(201, 17%, 80%);
   --clr-light-gray: hsl(201, 17%, 77%);
   --clr-darker-red: hsl(351, 100%, 17%);
@@ -383,6 +386,7 @@ textarea:not([rows]) {
   --clr-darker-gray: #0f1415;
   --clr-dark-gray: hsl(191, 18%, 13%);
   --clr-med-gray: hsl(191, 18%, 22%);
+  --clr-med-light-gray: hsl(191, 18%, 40%);
   --clr-lighter-gray: hsl(201, 17%, 80%);
   --clr-light-gray: hsl(201, 17%, 77%);
   --clr-darker-red: hsl(351, 100%, 17%);
@@ -471,6 +475,7 @@ textarea:not([rows]) {
   --clr-darker-gray: #0f1415;
   --clr-dark-gray: hsl(191, 18%, 13%);
   --clr-med-gray: hsl(191, 18%, 22%);
+  --clr-med-light-gray: hsl(191, 18%, 40%);
   --clr-lighter-gray: hsl(201, 17%, 80%);
   --clr-light-gray: hsl(201, 17%, 77%);
   --clr-darker-red: hsl(351, 100%, 17%);
@@ -569,6 +574,7 @@ textarea:not([rows]) {
   --clr-darker-gray: #0f1415;
   --clr-dark-gray: hsl(191, 18%, 13%);
   --clr-med-gray: hsl(191, 18%, 22%);
+  --clr-med-light-gray: hsl(191, 18%, 40%);
   --clr-lighter-gray: hsl(201, 17%, 80%);
   --clr-light-gray: hsl(201, 17%, 77%);
   --clr-darker-red: hsl(351, 100%, 17%);
@@ -604,7 +610,7 @@ textarea:not([rows]) {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 @media (min-width: 43.75em) {
@@ -629,13 +635,21 @@ textarea:not([rows]) {
   padding: 2em;
 }
 .title__card h2 {
-  font-size: var(--fs-1);
+  font-size: var(--fs-0);
   font-weight: 500;
   text-align: center;
-  margin: 2em auto;
+  margin: 4em 0;
   background-color: var(--clr-darker-gray);
   width: 40%;
-  padding: 1em;
+  padding: 0.5em;
+}
+@media (min-width: 43.75em) {
+  .title__card h2 {
+    font-size: var(--fs-1);
+    padding: 1em;
+    margin: 4em auto;
+    width: 70%;
+  }
 }
 .title__card img {
   margin-bottom: 2em;
@@ -668,16 +682,16 @@ textarea:not([rows]) {
 
 .title__bio {
   position: relative;
+  background-color: var(--clr-med-light-gray);
   background-image: url("/img/chicago-500.webp");
-  background-image: -webkit-image-set(url("/img/chicago-500.webp") 1x, url("/img/chicago-1500.webp") 2x);
-  background-image: image-set(url("/img/chicago-500.webp") 1x, url("/img/chicago-1500.webp") 2x);
+  background-image: -webkit-image-set(url("/img/chicago-500-tall.webp") 1x, url("/img/chicago-1500.webp") 2x);
+  background-image: image-set(url("/img/chicago-500-tall.webp") 1x, url("/img/chicago-1500.webp") 2x);
   -o-object-fit: cover;
      object-fit: cover;
   background-repeat: no-repeat;
   min-height: 1400px;
   background-position: top;
   inset: 0;
-  background-color: var(--clr-dark-gray);
 }
 @media (min-width: 43.75em) {
   .title__bio {
@@ -725,6 +739,7 @@ textarea:not([rows]) {
   --clr-darker-gray: #0f1415;
   --clr-dark-gray: hsl(191, 18%, 13%);
   --clr-med-gray: hsl(191, 18%, 22%);
+  --clr-med-light-gray: hsl(191, 18%, 40%);
   --clr-lighter-gray: hsl(201, 17%, 80%);
   --clr-light-gray: hsl(201, 17%, 77%);
   --clr-darker-red: hsl(351, 100%, 17%);
@@ -772,6 +787,7 @@ textarea:not([rows]) {
   --clr-darker-gray: #0f1415;
   --clr-dark-gray: hsl(191, 18%, 13%);
   --clr-med-gray: hsl(191, 18%, 22%);
+  --clr-med-light-gray: hsl(191, 18%, 40%);
   --clr-lighter-gray: hsl(201, 17%, 80%);
   --clr-light-gray: hsl(201, 17%, 77%);
   --clr-darker-red: hsl(351, 100%, 17%);
@@ -879,6 +895,7 @@ textarea:not([rows]) {
   --clr-darker-gray: #0f1415;
   --clr-dark-gray: hsl(191, 18%, 13%);
   --clr-med-gray: hsl(191, 18%, 22%);
+  --clr-med-light-gray: hsl(191, 18%, 40%);
   --clr-lighter-gray: hsl(201, 17%, 80%);
   --clr-light-gray: hsl(201, 17%, 77%);
   --clr-darker-red: hsl(351, 100%, 17%);
