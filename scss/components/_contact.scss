@@ -35,6 +35,11 @@
             width: 100%;
             padding: 1em 2em;
             margin: 2em 0;
+            border: none;
+
+            &:focus {
+                outline: 3px solid var(--clr-med-red);
+            }
         }
 
         #message {
@@ -42,6 +47,11 @@
             width: 100%;
             padding: 1em 2em;
             margin: 2em 0;
+            border: none;
+
+            &:focus {
+                outline: 3px solid var(--clr-med-red);
+            }
         }
 
         button {

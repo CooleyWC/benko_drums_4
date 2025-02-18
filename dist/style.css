@@ -829,12 +829,20 @@ textarea:not([rows]) {
   width: 100%;
   padding: 1em 2em;
   margin: 2em 0;
+  border: none;
+}
+.form__container form #email:focus {
+  outline: 3px solid var(--clr-med-red);
 }
 .form__container form #message {
   background-color: var(--clr-light-gray);
   width: 100%;
   padding: 1em 2em;
   margin: 2em 0;
+  border: none;
+}
+.form__container form #message:focus {
+  outline: 3px solid var(--clr-med-red);
 }
 .form__container form button {
   background-color: var(--clr-darker-gray);
