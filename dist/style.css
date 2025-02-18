@@ -431,10 +431,10 @@ textarea:not([rows]) {
   margin: 1.5em auto;
   width: 52%;
   background-color: var(--clr-dark-red);
-  padding: 1em;
+  padding: 0.5em;
   font-size: var(--fs-0);
   font-weight: 600;
-  text-underline-offset: 8px;
+  text-decoration: none;
   color: var(--clr-lighter-gray);
   border-radius: 8px;
   transition: background-color 0.3s ease-in-out;
