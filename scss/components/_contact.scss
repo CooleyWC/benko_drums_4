@@ -46,7 +46,7 @@
 
         button {
             background-color: var(--clr-darker-gray);
-            // background-color: var(--clr-dark-red);
+            border-radius: 8px;
             font-size: var(--fs-1);
             font-weight: 700;
             padding: 0.8em 1em;
@@ -71,7 +71,6 @@
 
             &:hover {
                 background-color: var(--clr-dark-red);
-                // background-color: var(--clr-darker-gray);
                 cursor: pointer;
                 transition: background-color 0.3s ease-in-out;
                 color: white;
