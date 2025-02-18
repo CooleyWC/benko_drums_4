@@ -154,6 +154,11 @@ textarea:not([rows]) {
 .footer__connect a:hover {
   transform: scale(1.05);
 }
+@media (prefers-reduced-motion: reduce) {
+  .footer__connect a:hover {
+    transform: none;
+  }
+}
 .footer__socials {
   display: flex;
   justify-content: space-around;
@@ -230,6 +235,11 @@ textarea:not([rows]) {
 }
 .logo:hover {
   animation: pulse 3s infinite ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo:hover {
+    animation: none;
+  }
 }
 
 @keyframes pulse {
@@ -538,6 +548,11 @@ textarea:not([rows]) {
 }
 .card a:hover {
   transform: scale(1.05);
+}
+@media (prefers-reduced-motion: reduce) {
+  .card a:hover {
+    transform: none;
+  }
 }
 @media (min-width: 43.75em) {
   .card {
