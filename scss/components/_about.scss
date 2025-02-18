@@ -132,21 +132,21 @@
 
 .about-footer {
     background-color: var(--clr-dark-gray);
-    height:650px;
+    height:570px;
 
     @include u.breakpoint(small){
-        height: 430px;
+        height: 280px;
     }
 
     @include u.breakpoint(medium){
-        height: 720px;
+        height: 850px;
     }
 
     @include u.breakpoint(large){
-        height: 550px;
+        height: 560px;
     }
 
     @include u.breakpoint(xlarge){
-        height: 590px;
+        height: 670px;
     }
 }

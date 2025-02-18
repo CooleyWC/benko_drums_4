@@ -703,26 +703,26 @@ textarea:not([rows]) {
 
 .about-footer {
   background-color: var(--clr-dark-gray);
-  height: 650px;
+  height: 570px;
 }
 @media (min-width: 30em) {
   .about-footer {
-    height: 430px;
+    height: 280px;
   }
 }
 @media (min-width: 43.75em) {
   .about-footer {
-    height: 720px;
+    height: 850px;
   }
 }
 @media (min-width: 56.25em) {
   .about-footer {
-    height: 550px;
+    height: 560px;
   }
 }
 @media (min-width: 90em) {
   .about-footer {
-    height: 590px;
+    height: 670px;
   }
 }
 
