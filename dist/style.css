@@ -351,6 +351,7 @@ textarea:not([rows]) {
 }
 .hero .hero__img-container {
   max-width: 100%;
+  padding: 1em;
 }
 .hero h1 {
   padding: 4rem 0;

@@ -59,7 +59,13 @@
                 <h2>Percussionist | Composer | Educator | Curator</h2>
             </section>
             <div class="hero__img-container">
-                <img src="img/benko_drumming_optimized.webp" alt="tom drumming"/>
+                <picture>
+                    <source media="(min-width: 900px)" srcset="img/benko_drumming_optimized.webp">
+                    <source media="(min-width: 700px)" srcset="img/benko_drumming-768.webp">
+                    <source media="(min-width: 300px)" srcset="img/benko_drumming-500.webp">
+                    
+                    <img src="img/benko_drumming-500.webp" alt="tom drumming"/>
+                </picture>
             </div>
         </div>
         <section class="about">
