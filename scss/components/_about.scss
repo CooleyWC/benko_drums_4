@@ -139,14 +139,14 @@
     }
 
     @include u.breakpoint(medium){
-        height: 850px;
+        height: 874px;
     }
 
     @include u.breakpoint(large){
-        height: 560px;
+        height: 738px;
     }
 
     @include u.breakpoint(xlarge){
-        height: 670px;
+        height: 740px;
     }
 }
