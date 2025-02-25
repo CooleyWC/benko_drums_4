@@ -135,14 +135,14 @@ $base-path: '../img';
 
 .about-footer {
     background-color: var(--clr-dark-gray);
-    height:570px;
+    height:704px;
 
     @include u.breakpoint(small){
         height: 280px;
     }
 
     @include u.breakpoint(medium){
-        height: 874px;
+        height: 976px;
     }
 
     @include u.breakpoint(large){
