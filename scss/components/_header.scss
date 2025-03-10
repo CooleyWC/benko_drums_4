@@ -3,7 +3,7 @@
 @import '../global/typography';
 
 
-// this is for disabling animations while resizing viewport
+this is for disabling animations while resizing viewport
 .resize-animation-stopper * {
     animation: none !important;
     transition: none !important;
@@ -76,6 +76,7 @@
     &:hover {
         background-color: var(--clr-dark-red);
     }
+    
 }
 
 
@@ -90,7 +91,7 @@
         margin: 0;
         padding: 0;
 
-
+        // moves the menu off screen
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
     }
@@ -100,6 +101,7 @@
     }
 
     .primary-navigation[data-visible='true'] {
+        // makes the menu visible
         transform: translateX(0%)
     }
 

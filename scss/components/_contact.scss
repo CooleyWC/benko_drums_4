@@ -6,23 +6,59 @@
 .form__container {
     background-color: var(--clr-dark-gray);
     height: 100vh;
+
+    .contact-title {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1em;
+
+        h1 {
+            padding: 4rem 0 0 0 ;
+            color: white;
+            font-size: var(--fs-3);
+            letter-spacing: 0.2em;
+            font-weight: 600;
+            text-align: center;
     
+            @include u.breakpoint(medium) {
+                font-size: var(--fs-5);
+            }
+        }
 
-    h1 {
-        padding: 4rem 0;
-        color: white;
-        font-size: var(--fs-3);
-        letter-spacing: 0.2em;
-        font-weight: 600;
-        text-align: center;
 
-        @include u.breakpoint(medium) {
-            font-size: var(--fs-5);
+        .title-email {
+            text-align: center;
+            margin-bottom: 4rem;
+            color: white;
+            font-size: var(--fs-0);
+            letter-spacing: 0.2em;
+            text-underline-offset: 0.5em;
+            transition: all 1s;
+
+            &:hover {
+                transform: scale(1.05);
+
+                @media (prefers-reduced-motion: reduce){
+                    transform: none;
+                }
+            }
         }
     }
 
-    form {
-        margin: 0 2em;
+
+    .form__wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .form__content {
+        width: 100%;
+        max-width: 70%;
+        margin: 0 auto;
    
         label {
             display: inline-block;
@@ -33,9 +69,10 @@
         #email {
             background-color: var(--clr-light-gray);
             width: 100%;
-            padding: 1em 2em;
+            padding: 1em;
             margin: 2em 0;
             border: none;
+            border-radius: 5px;
 
             &:focus {
                 outline: 3px solid var(--clr-med-red);
@@ -45,9 +82,10 @@
         #message {
             background-color: var(--clr-light-gray);
             width: 100%;
-            padding: 1em 2em;
+            padding: 1em;
             margin: 2em 0;
             border: none;
+            border-radius: 5px;
 
             &:focus {
                 outline: 3px solid var(--clr-med-red);
@@ -55,8 +93,8 @@
         }
 
         button {
-            background-color: var(--clr-darker-gray);
-            border-radius: 8px;
+            background-color: var(--clr-dark-red);
+            border-radius: 5px;
             font-size: var(--fs-1);
             font-weight: 700;
             padding: 0.8em 1em;
@@ -80,7 +118,7 @@
             
 
             &:hover {
-                background-color: var(--clr-dark-red);
+                background-color: var(--clr-darker-red);
                 cursor: pointer;
                 transition: background-color 0.3s ease-in-out;
                 color: white;
