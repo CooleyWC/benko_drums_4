@@ -4,26 +4,31 @@
 @import '../global/colors';
 
 
-.thank-you-container {
+.compositions-container {
 
     background-color: var(--clr-dark-gray);
     color: white;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
     flex-direction: column;
-    height: 100vh;
+  
 
     &__card {
     
         text-align: center;
-        padding-top: 8em;
 
         h1 {
+            padding: 4rem 0;
+            color: white;
             font-size: var(--fs-3);
-            padding-bottom: 1em;
+            letter-spacing: 0.2em;
             font-weight: 600;
+            text-align: center;
+
+            @include u.breakpoint(small){
+                font-size: var(--fs-5);
+            }
         }
 
         h2 {

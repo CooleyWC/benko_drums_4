@@ -55,21 +55,24 @@
     </header>
     <main>
         <section class="form__container">
-            <div>
+            <div class="contact-title">
                 <h1>Contact Tom</h1>
+                <a class="title-email" href="mailto:tabdrums@gmail.com">tabdrums@gmail.com</a>
             </div>
-            <form class="form__wrapper" action="https://formsubmit.co/bf70e3faccab4cbe81a076315e50e6f1" method="POST">
-                <input type="hidden" name="_next" value="https://cooleywc.github.io/benko_drums_4/thank-you-page.html">
-                <div class="form__email">
-                    <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Enter Your Email Address" required/>
-                </div>
-                <div class="form__message">
-                    <label for="message" >Message</label>
-                    <textarea name="message" id="message" placeholder="Enter Your Message" required></textarea>
-                </div>
-                <button type="submit" class="form__submit">Submit Message</button>
-            </form>
+            <div class="form__wrapper">
+                <form class="form__content" action="https://formsubmit.co/bf70e3faccab4cbe81a076315e50e6f1" method="POST">
+                    <input type="hidden" name="_next" value="https://cooleywc.github.io/benko_drums_4/thank-you-page.html">
+                    <div class="form__email">
+                        <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Enter Your Email Address" required/>
+                    </div>
+                    <div class="form__message">
+                        <label for="message" >Message</label>
+                        <textarea name="message" id="message" placeholder="Enter Your Message" rows="10" required></textarea>
+                    </div>
+                    <button type="submit" class="form__submit">Submit Message</button>
+                </form>
+            </div>
         </section>
     </main>
 
