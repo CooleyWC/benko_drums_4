@@ -18,37 +18,42 @@
 
 </head>
 <body class="about-body">
-    <header class="primary-header">
-        <div>
+    <header class="topnav wrapper">
+        <div class="logo">
             <a href="./" class="logo-link">
-                <img src="img/TABdrums-logo2.png" class="logo"/>
+                <img src="img/TABdrums-logo-250.webp" class="logo" width="80" height="80" alt="Logo with the text tab drums"/>
             </a>
-        </div>
-        <button 
-            aria-controls="primary-navigation" 
-            aria-expanded="false"
-            class="mobile-nav-toggle"
-            >
-            <span class="sr-only">Menu</span>
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-x"></i>
-        </button>
-        <nav>
-            <ul id="primary-navigation" data-visible="false" class="primary-navigation">
-                <li class="active">
-                <li>
-                    <a href="about.html">
-                        About
-                    </a>
-                <li>
-                    <a href="compositions.html">
-                        Compositions
-                    </a>
-                <li>
-                    <a href="contact.html">
-                        Contact
-                    </a>
-            </ul>
+       </div>
+       <nav>
+            <span id="nav-label" hidden>Navigation</span>
+                <button
+                    id="btnOpen" 
+                    class="topnav__open" 
+                    aria-expanded="false" 
+                    aria-labelledby="nav-label"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            <div class="topnav__menu" role="dialog" aria-labelledby="nav-label">
+                <button 
+                    class="topnav__close"
+                    id="btnClose"
+                    aria-label="Close"
+                    >
+                    <i class="fa-solid fa-x"></i>
+                </button>
+                <ul class="topnav__links">
+                    <li class="topnav__item">
+                        <a href="about.html" class="topnav__link">About</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="compositions.html" class="topnav__link">Compositions</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="contact.html" class="topnav__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>

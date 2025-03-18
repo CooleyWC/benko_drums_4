@@ -3,31 +3,13 @@
 @import '../global/typography';
 
 
-this is for disabling animations while resizing viewport
-.resize-animation-stopper * {
-    animation: none !important;
-    transition: none !important;
-  }
-
-.primary-header {
-    background-color: var(--clr-darker-gray);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-}
-
-.mobile-nav-toggle {
-    display: none;
-}
-
 .logo {
     width: 5rem;
     aspect-ratio: 1;
-    margin: 1rem;
+    margin: 0.37rem;
 
     &:hover {
-        animation: pulse 3s infinite ease-in-out;
+        animation: pulse 4s infinite ease-in-out;
 
         @media (prefers-reduced-motion: reduce) {
             animation: none;
@@ -42,7 +24,7 @@ this is for disabling animations while resizing viewport
     }
     50% {
         transform: scale(1.1);
-        filter: brightness(1.3)
+        filter: brightness(1.1)
     }
     100% {
         transform: scale(1);
@@ -51,112 +33,109 @@ this is for disabling animations while resizing viewport
 }
 
 
-
-.primary-navigation {
+.topnav {
+    background-color: var(--clr-darker-gray);
     display: flex;
-    gap: 3rem;
-    list-style: none;
-    
-    padding: 0;
-    margin-right: 0.8em;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 
-    background: var(--clr-darker-gray);
-    
-}
+    button {
 
-
-.primary-navigation a {
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: var(--fs-0);
-    padding: 0.5em;
-    transition: background-color 0.2s ease-in-out;
-    text-transform: uppercase;
-
-    &:hover {
-        background-color: var(--clr-dark-red);
-    }
-    
-}
-
-
-
-@media (max-width: 43.8em) {
-    .primary-navigation {
-        background-color: var(--clr-darker-gray);
-        position: fixed;
-        flex-direction: column;
-        z-index: 1000;
-        inset: 0;
-        margin: 0;
+        background: none;
+        border: none;
         padding: 0;
 
-        // moves the menu off screen
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in-out;
+        .fa-solid {
+            font-size: var(--fs-2);
+            color: white;
+    
+            &:hover {
+                cursor: pointer;
+                color: var(--clr-red);
+            }
+        }
+
+        @media (width >=40em){
+            display: none;
+        }
+
     }
 
-    .primary-navigation li {
-        margin: 1.5em auto;
+    #btnOpen {
+        margin-right: 2rem;
     }
 
-    .primary-navigation[data-visible='true'] {
-        // makes the menu visible
-        transform: translateX(0%)
-    }
+    &__open[aria-expanded='true']{
+        + .topnav__menu {
+            translate: 0;
 
-    .mobile-nav-toggle {
-        display: block;
-        position: absolute;
-        z-index: 9999;
-        background-color: transparent;
-        width: 2rem;
-        aspect-ratio: 1;
-        top: 2.5rem;
-        right: 2rem;
-        border: 0;
-    }
-
-    .fa-solid {
-        font-size: var(--fs-2);
-        color: white;
-
-        &:hover {
-            cursor: pointer;
-            color: var(--clr-red);
+            @media (prefers-reduced-motion) {
+                opacity: 1;
+            }
         }
     }
 
-    .mobile-nav-toggle i {
-        display: none;
+    &__close {
+        display: block;
+        margin-inline-start: auto;
+        margin-block-end: 4rem;
+
+        .fa-x {
+            color: red;
+            width: 2.5rem;
+        }
     }
 
-    .mobile-nav-toggle .fa-bars {
-        display: inline-block;
+    &__menu {
+        @media (width < 40em){
+            position: fixed;
+            inset: 0;
+            padding: 1.5rem;
+            background-color: var(--clr-darker-gray);
+            translate: 100vw 0;
+            transition: translate 0.5s ease-in-out;
+        }
+
+        @media (width < 40em) and (prefers-reduced-motion) {
+            translate: 0;
+            opacity: 0;
+            transition: opacity 500ms ease-in-out;
+        }
     }
 
-    .mobile-nav-toggle[aria-expanded='true'] .fa-bars {
-        display: none;
+
+    &__links {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+        margin: 0;
+        padding: 0.5em;
+    
+        @media (width < 40em){
+            flex-direction: column;
+        }
     }
 
-    .mobile-nav-toggle[aria-expanded='true'] .fa-x {
-        display: inline-block;
+    &__item {
+        list-style-type: none;
     }
+
+    &__link {
+        color: white;
+        font-size: var(--fs-0);
+        border-radius: 8px;
+        text-decoration: none;
+        padding: 0.5em;
+        transition: background-color 0.2s ease-in-out;
+        text-transform: uppercase;
+        
+
+        &:hover {
+            background-color: var(--clr-dark-red);
+        }
+            
+        }
 }
 
-.logo-link {
-    &:hover {
-        cursor: pointer;
-    }
-}
 
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    white-space: nowrap;
-    border: 0;
-}
