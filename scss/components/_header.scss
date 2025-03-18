@@ -2,7 +2,6 @@
 @import '../global/colors';
 @import '../global/typography';
 
-
 .logo {
     width: 5rem;
     aspect-ratio: 1;
@@ -32,7 +31,6 @@
     }
 }
 
-
 .topnav {
     background-color: var(--clr-darker-gray);
     display: flex;
@@ -41,7 +39,6 @@
     color: white;
 
     button {
-
         background: none;
         border: none;
         padding: 0;
@@ -134,8 +131,7 @@
         &:hover {
             background-color: var(--clr-dark-red);
         }
-            
-        }
+    }
 }
 
 
